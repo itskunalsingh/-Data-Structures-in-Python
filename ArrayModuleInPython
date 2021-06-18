@@ -1,0 +1,57 @@
+# importing array module
+from array import *
+
+# creating an array
+arr1 = array('i', [1, 2, 3, 4, 5])
+
+# adding element at the end of the array
+arr1.append(6)
+
+# inserting at the first index
+arr1.insert(1, 2)
+
+# deleting the element at the index 1
+arr1.pop(1)
+
+# removing the first occurrence of an element
+arr1.remove(1)
+
+# reversing the array
+arr1.reverse()
+
+# finding the index of an element in the array
+index1 = arr1.index(6)
+print(arr1)
+print(index1)
+
+# slicing the array
+print(arr1[1:])
+print(arr1[::-1])
+print(arr1[: 4])
+
+# getting Array_datatype
+print(arr1.typecode)
+
+# getting size of one single element
+print(arr1.itemsize)
+
+# getting address and number of elements in an array
+info_ = arr1.buffer_info()
+print(info_)
+
+# count method
+c = arr1.count(5)
+print(c)
+
+# appending a whole new list in an array
+lst1 = [10, 20, 30, 40]
+arr1.extend(lst1)
+print(arr1)
+
+# getting the list from the array
+arr1.fromlist(lst1)
+print(lst1)
+
+# converting the whole array to a list
+arr1.tolist()
+print(arr1)
